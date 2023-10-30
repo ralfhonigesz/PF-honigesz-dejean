@@ -1,0 +1,545 @@
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">*/
+
+/*font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;*/
+
+/* estilos */
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff8bc;
+}
+
+div strong {
+    font-family: 'Playfair Display', serif;
+    color: #5c0c10;
+    font-weight: 800;
+    font-size: 4.3rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #7d1721;
+    font-weight: 500;
+    font-size: 2.4rem;
+    font-style: italic;
+}
+
+/* fin estilos */
+
+/* inicio header bootstrap */
+
+.imagen-logo {
+    width: 12rem;
+}
+
+.bg-header {
+    background-color: black;
+    border-bottom: 1px solid beige;
+}
+
+.nav-link {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem;
+}
+
+.boton {
+    background-color: white;
+}
+
+
+/* fin header bootstrap */
+
+/*inicio pagina index*/
+.titulos-index {
+    text-align: center;
+}
+
+/* inicio banner */
+
+.bg-banner {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    width: 100%;
+    max-width: 1620px;
+}
+
+/* fin banner */
+
+/* inicio carta */
+
+.la-carta-container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: black;
+    padding: 4rem;
+}
+
+.titulos-la-carta {
+    font-size: 3.5rem;
+}
+
+.carta-entradas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.carta-principales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.carta-postre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.img-principales {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.img-postre {
+    order: 1;
+}
+
+.txt-la-carta {
+    margin: 0 3rem;
+    padding: 0.5rem;
+    border: 0.5rem double #5c0c10;
+}
+
+.imagen-carta {
+    width: 195px;
+    height: 292.5px;
+    margin: 1rem 0;
+    border: 1px solid #fff8bc;
+}
+
+main section ul li {
+    font-family: 'Roboto', sans-serif;
+    color: #fff8bc;
+    font-size: 1.5rem;
+    list-style-type: circle;
+}
+
+/* fin carta */
+
+/* inicio resto*/
+
+.section-el-resto {
+    background-color: black;
+    padding: 4rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   width: 100%;
+   max-width: 1620px;
+}
+
+.card-el-resto {
+    margin: 3rem;
+    background-color: #fff8bc;
+    padding: 1rem;
+    justify-content: center;
+
+}
+
+.el-resto-titulos {
+    color: #5c0c10;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+}
+
+.texto-el-resto {
+    color: black;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+/* fin el resto */
+
+/* inicio sucursales */
+.section-sucursales-container {
+    background-color: black;
+    padding: 4rem;
+}
+
+.imagen-sucursales {
+    width: 100%;
+    height: 100%;
+}
+
+.sucursales-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sucursal-index {
+    width: 480px;
+    height: 300px;
+    margin: 3rem 5rem;
+    padding: 0.5rem;
+    border: 1px solid #fff8bc;
+}
+
+/* fin sucursales */
+
+/*fin pagina index*/
+
+/* inicio footer */
+
+.footer-container {
+    flex-wrap: wrap;
+    padding: 4rem;
+    border-top: 1px solid beige;
+}
+
+footer {
+    background-color: black;
+    color: beige;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contacto-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-contacto {
+    font-family: 'Playfair Display', serif;
+    color: #5c0c10;
+    font-weight: 800;
+    font-size: 3.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+footer ul {
+    padding-top: 3rem;
+}
+
+footer ul li {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff8bc;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.flex-logo-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer {
+    width: 25rem;
+    height: 25rem;
+}
+
+footer p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.redes-sociales {
+    font-family: 'Roboto', sans-serif;
+    color: #fff8bc;
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+/*fin footer*/
+
+/*inicio pagina sucursales*/
+
+.sucursal-seccion {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+}
+
+.sucursal-imagen {
+    width: 70%;
+    height: 70%;
+    padding: 5rem;
+}
+
+.texto-sucursal {
+    display: flex;
+    flex-flow: column;
+
+}
+
+.parrafo-sucursal {
+    font-family: 'Roboto', sans-serif;
+    color: #fff8bc;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.sucursal-titulo {
+    color: #5c0c10;
+    font-size: 3rem;
+}
+
+.txt-suc-terraza {
+    order: -1;
+    padding-left: 8rem;
+}
+
+/*fin pagina sucursales*/
+
+/*inicio pagina eventos*/
+
+/* texto */
+.eventos-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4rem;
+
+}
+
+.txt-eventos {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;
+    color: #5c0c10;
+    font-size: 3.5rem;
+}
+
+.parrafo-eventos {
+    font-family: 'Roboto', sans-serif;
+    color: #fff8bc;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.realizar-reserva {
+    color: #7d1721;
+    font-size: 2.5rem;
+}
+
+/* formulario */
+form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+form p {
+    font-family: 'Playfair Display', serif;
+    color: #7d1721;
+    font-size: 1.8rem;
+
+}
+
+form div {
+    font-family: 'Roboto', sans-serif;
+    color: #fff8bc;
+    font-size: 1.8rem;
+}
+
+.form-container {
+    display: flex;
+    margin: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-1-2 {
+    margin: 3rem;
+    text-align: right;
+}
+
+.imagen-eventos {
+    width: 434.15px;
+    height: 289.43px;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.txt-area {
+    text-align: center;
+}
+
+.coment-adicc {
+    text-align: left;
+}
+
+/* imagenes */
+.img-eventos {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+    justify-content: space-around;
+}
+
+/*fin pagina eventos*/
+
+/* inicio @media */
+
+/* hasta tableta */
+@media screen and (max-width: 768px) {
+    .mapa-grande {
+        display: none;
+    }
+
+}
+
+/* a partir de tableta */
+
+@media screen and (min-width: 769px) {
+    .mapa-chico {
+        display: none;
+    }
+}
+
+/* correccion el resto tableta */
+
+@media screen and (min-width: 575px) and (max-width: 1000px) {
+
+    .el-resto-tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* correccion el resto cel*/
+
+@media screen and (max-width: 425px) {
+
+    /*el resto */
+    .section-el-resto {
+        padding: 1rem;
+    }
+
+    .card-el-resto {
+        padding: 1rem;
+    }
+
+    /* sucursales index */
+
+    .section-sucursales-container {
+        padding: 1.5rem;
+    }
+
+    .sucursales-index {
+        padding: 1rem;
+    }
+
+    .sucursal-index {
+        margin: 2rem;
+    }
+
+    /* la carta */
+    .la-carta-container {
+        padding: 1rem;
+    }
+
+    .txt-la-carta {
+        margin: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .imagen-carta {
+        width: 140px;
+        height: 245px;
+    }
+
+}
+
+/* pagina sucursales */
+@media screen and (max-width: 1024px) {
+
+    .suc-recoleta {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .suc-terraza {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .txt-suc-terraza {
+        order: 1;
+    }
+
+    .sucursal-seccion {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .texto-sucursal {
+        padding: 0;
+    }
+
+    .sucursal-imagen {
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+    }
+    .parrafo-sucursal {
+        text-align: center;
+    }
+    .sucursal-titulo {
+        text-align: center;
+    }
+}
