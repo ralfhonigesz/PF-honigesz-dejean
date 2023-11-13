@@ -1,0 +1,66 @@
+footer {
+    background-color: black;
+    flex-wrap: wrap;
+    padding: 4rem;
+    border-top: 1px solid beige;
+
+    p {
+        font-family: $font-titulo;
+        font-size: 1rem;
+        text-align: center;
+        color: beige;
+    }
+}
+
+.contacto {
+    @include flex(null, space-around, center);
+    flex-wrap: wrap;
+
+    &-texto {
+        @include flex(column, center, center)
+    }
+
+    &-titulo {
+        font-family: $font-titulo;
+        color: $color-bordo-claro;
+        font-weight: 800;
+        font-size: 3.5rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    &-lista {
+        padding-top: 3rem;
+
+        &-items {
+            list-style-type: none;
+            font-family: $font-texto;
+            color: $color-beige;
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+}
+
+.logo-footer {
+
+    @include flex-center;
+
+    &-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mapa-grande{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .mapa-chico {
+        display: none;
+    }
+}

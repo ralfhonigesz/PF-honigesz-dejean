@@ -1,545 +1,562 @@
-/*<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Roboto:ital,wght@0,300;1,300&display=swap"
-        rel="stylesheet">*/
-
-/*font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;*/
-
-/* estilos */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: #fff8bc;
+  text-decoration: none;
 }
 
 div strong {
-    font-family: 'Playfair Display', serif;
-    color: #5c0c10;
-    font-weight: 800;
-    font-size: 4.3rem;
+  font-family: "Playfair Display", serif;
+  color: #5c0c10;
+  font-weight: 800;
+  font-size: 4.3rem;
 }
 
 h3 {
-    font-family: 'Playfair Display', serif;
-    color: #7d1721;
-    font-weight: 500;
-    font-size: 2.4rem;
-    font-style: italic;
-}
-
-/* fin estilos */
-
-/* inicio header bootstrap */
-
-.imagen-logo {
-    width: 12rem;
-}
-
-.bg-header {
-    background-color: black;
-    border-bottom: 1px solid beige;
-}
-
-.nav-link {
-    color: white;
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    margin: 2rem;
+  font-family: "Playfair Display", serif;
+  color: #7d1721;
+  font-weight: 500;
+  font-size: 2.4rem;
+  font-style: italic;
 }
 
 .boton {
-    background-color: white;
+  margin: 1rem;
+  width: 100px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border: 2px solid #7d1721;
+  border-radius: 10px;
 }
 
-
-/* fin header bootstrap */
-
-/*inicio pagina index*/
-.titulos-index {
-    text-align: center;
+.boton:hover {
+  background-color: #7d1721;
 }
 
-/* inicio banner */
-
-.bg-banner {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner {
-    width: 100%;
-    max-width: 1620px;
+.boton:active {
+  background-color: #5c0c10;
 }
 
-/* fin banner */
-
-/* inicio carta */
-
-.la-carta-container {
-    display: flex;
-    flex-flow: column wrap;
-    background-color: black;
-    padding: 4rem;
+.imagen-logo {
+  width: 12rem;
+  height: 12rem;
 }
 
-.titulos-la-carta {
-    font-size: 3.5rem;
+.bg-header {
+  background-color: black;
+  border-bottom: 1px solid beige;
 }
 
-.carta-entradas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 3rem;
+.nav-link {
+  color: white;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  margin: 2rem;
 }
 
-.carta-principales {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 3rem 0;
-}
-
-.carta-postre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 3rem;
-}
-
-.img-principales {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.img-postre {
-    order: 1;
-}
-
-.txt-la-carta {
-    margin: 0 3rem;
-    padding: 0.5rem;
-    border: 0.5rem double #5c0c10;
-}
-
-.imagen-carta {
-    width: 195px;
-    height: 292.5px;
-    margin: 1rem 0;
-    border: 1px solid #fff8bc;
-}
-
-main section ul li {
-    font-family: 'Roboto', sans-serif;
-    color: #fff8bc;
-    font-size: 1.5rem;
-    list-style-type: circle;
-}
-
-/* fin carta */
-
-/* inicio resto*/
-
-.section-el-resto {
-    background-color: black;
-    padding: 4rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-group {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-   width: 100%;
-   max-width: 1620px;
-}
-
-.card-el-resto {
-    margin: 3rem;
-    background-color: #fff8bc;
-    padding: 1rem;
-    justify-content: center;
-
-}
-
-.el-resto-titulos {
-    color: #5c0c10;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    padding-top: 1.5rem;
-}
-
-.texto-el-resto {
-    color: black;
-    text-align: justify;
-    font-size: 1.5rem;
-    padding: 2rem;
-}
-
-/* fin el resto */
-
-/* inicio sucursales */
-.section-sucursales-container {
-    background-color: black;
-    padding: 4rem;
-}
-
-.imagen-sucursales {
-    width: 100%;
-    height: 100%;
-}
-
-.sucursales-index {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.sucursal-index {
-    width: 480px;
-    height: 300px;
-    margin: 3rem 5rem;
-    padding: 0.5rem;
-    border: 1px solid #fff8bc;
-}
-
-/* fin sucursales */
-
-/*fin pagina index*/
-
-/* inicio footer */
-
-.footer-container {
-    flex-wrap: wrap;
-    padding: 4rem;
-    border-top: 1px solid beige;
+.boton {
+  background-color: white;
 }
 
 footer {
-    background-color: black;
-    color: beige;
+  background-color: black;
+  flex-wrap: wrap;
+  padding: 4rem;
+  border-top: 1px solid beige;
+}
+footer p {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  text-align: center;
+  color: beige;
 }
 
 .contacto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .contacto-texto {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.titulo-contacto {
-    font-family: 'Playfair Display', serif;
-    color: #5c0c10;
-    font-weight: 800;
-    font-size: 3.5rem;
-    font-style: italic;
-    text-align: center;
+.contacto-titulo {
+  font-family: "Playfair Display", serif;
+  color: #7d1721;
+  font-weight: 800;
+  font-size: 3.5rem;
+  font-style: italic;
+  text-align: center;
 }
-
-footer ul {
-    padding-top: 3rem;
+.contacto-lista {
+  padding-top: 3rem;
 }
-
-footer ul li {
-    list-style-type: none;
-    font-family: 'Roboto', sans-serif;
-    color: #fff8bc;
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 1rem;
-}
-
-.flex-logo-footer {
-    display: flex;
-    justify-content: center;
+.contacto-lista-items {
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  color: #fff8bc;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .logo-footer {
-    width: 25rem;
-    height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-footer-img {
+  width: 250px;
+  height: 250px;
 }
 
-footer p {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    text-align: center;
-
+@media screen and (max-width: 768px) {
+  .mapa-grande {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .mapa-chico {
+    display: none;
+  }
+}
+.nav-link:hover {
+  color: white;
+  text-shadow: 2px 2px 2px #fff8bc;
 }
 
-.redes-sociales {
-    font-family: 'Roboto', sans-serif;
-    color: #fff8bc;
-    font-size: 1.8rem;
-    text-align: right;
+.img-sucursales:hover {
+  box-shadow: 0px 0px 7px 1px #fff8bc;
 }
 
-/*fin footer*/
+.titulos-index {
+  text-align: center;
+}
 
-/*inicio pagina sucursales*/
+.banner {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-img {
+  width: 100%;
+  max-width: 1620px;
+}
+
+.titulos-carta {
+  font-size: 3.5rem;
+  padding-left: 2rem;
+}
+
+.carta {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: black;
+  padding: 4rem;
+}
+.carta-entradas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem;
+}
+.carta-principales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.carta-postre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.img-carta {
+  width: 195px;
+  height: 292.5px;
+  margin: 1rem 0;
+  border: 1px solid #fff8bc;
+}
+.img-carta-principales {
+  display: flex;
+  flex-flow: row wrap;
+}
+.img-carta-postre {
+  order: 1;
+}
+
+main section ul li {
+  font-family: "Roboto", sans-serif;
+  color: #fff8bc;
+  font-size: 1.5rem;
+  list-style-type: circle;
+}
+
+.txt-carta {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+  padding: 0.5rem;
+  border: 0.5rem double #5c0c10;
+}
+
+.section-resto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 4rem;
+  background-color: black;
+}
+
+.card-group {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 1620px;
+}
+
+.card-resto {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #fff8bc;
+}
+.card-resto-titulos {
+  text-align: center;
+  color: #5c0c10;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  padding-top: 1.5rem;
+}
+.card-resto-texto {
+  text-align: justify;
+  color: black;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.sucursales-index {
+  background-color: black;
+  padding: 4rem;
+}
+.sucursales-index-grupo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sucursales-index-img {
+  width: 480px;
+  height: 300px;
+  margin: 3rem 5rem;
+  padding: 0.5rem;
+  border: 1px solid #fff8bc;
+}
+
+.img-sucursales {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 575px) and (max-width: 1000px) {
+  .el-resto-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 670px) {
+  .sucursales-index {
+    padding: 0.5rem;
+  }
+  .sucursales-index-grupo {
+    margin: 2rem 0;
+  }
+  .sucursales-index-img {
+    margin: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .img-carta {
+    width: 140px;
+    height: 245px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .carta {
+    padding: 1rem;
+  }
+  .carta-entradas {
+    margin: 2rem 0;
+  }
+  .carta-principales {
+    margin: 2rem 0;
+  }
+  .carta-postre {
+    margin: 2rem 0;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1420px) {
+  .carta {
+    padding: 2rem;
+  }
+  .carta-principales {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .carta-entradas {
+    margin: 3rem 0;
+  }
+  .carta-postre {
+    margin: 3rem 0;
+  }
+}
+.pag-suc-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
 
 .sucursal-seccion {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-width: 1600px;
 }
 
 .sucursal-imagen {
-    width: 70%;
-    height: 70%;
-    padding: 5rem;
+  width: 65%;
+  height: 65%;
+  padding: 3rem;
 }
 
-.texto-sucursal {
-    display: flex;
-    flex-flow: column;
-
+.sucursal {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
-
-.parrafo-sucursal {
-    font-family: 'Roboto', sans-serif;
-    color: #fff8bc;
-    font-size: 1.8rem;
-    margin-top: 2rem;
-}
-
 .sucursal-titulo {
-    color: #5c0c10;
-    font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  color: #5c0c10;
+  font-size: 3.5rem;
+}
+.sucursal-parrafo {
+  font-family: "Roboto", sans-serif;
+  color: #fff8bc;
+  font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
 .txt-suc-terraza {
-    order: -1;
-    padding-left: 8rem;
+  display: flex;
+  order: -1;
+  padding-left: 3rem;
 }
 
-/*fin pagina sucursales*/
-
-/*inicio pagina eventos*/
-
-/* texto */
-.eventos-container {
-    background-color: black;
+@media screen and (max-width: 1024px) {
+  .suc-recoleta {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 4rem;
-
-}
-
-.txt-eventos {
+  }
+  .suc-terraza {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+  }
+  .sucursal-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sucursal-imagen {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .sucursal {
+    padding-top: 1rem;
+  }
+  .sucursal-parrafo {
+    text-align: center;
+  }
+  .sucursal-titulo {
+    text-align: center;
+  }
+  .txt-suc-terraza {
+    order: 1;
+    padding-left: 0;
+  }
+}
+.eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 3rem;
+  background-color: black;
+}
+.eventos-txt {
+  display: flex;
+  align-items: right;
+  flex-flow: column wrap;
+  max-width: 1620px;
+}
+.eventos-titulo {
+  font-family: "Playfair Display", serif;
+  color: #5c0c10;
+  font-size: 4rem;
+}
+.eventos-parrafo {
+  font-family: "Roboto", sans-serif;
+  color: #fff8bc;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.eventos-reserva {
+  color: #7d1721;
+  font-size: 2.3rem;
+}
+.eventos-img {
+  width: 434.15px;
+  height: 289.43px;
+  padding: 1rem;
+}
+.eventos-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem;
+  justify-content: center;
+  background-color: black;
 }
 
-h4 {
-    font-family: 'Playfair Display', serif;
-    color: #5c0c10;
-    font-size: 3.5rem;
-}
-
-.parrafo-eventos {
-    font-family: 'Roboto', sans-serif;
-    color: #fff8bc;
-    font-size: 2rem;
-    margin-top: 2rem;
-}
-
-.realizar-reserva {
-    color: #7d1721;
-    font-size: 2.5rem;
-}
-
-/* formulario */
 form {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
-
 form p {
-    font-family: 'Playfair Display', serif;
-    color: #7d1721;
-    font-size: 1.8rem;
-
+  display: flex;
+  justify-content: left;
+  font-family: "Playfair Display", serif;
+  color: #7d1721;
+  font-size: 2.3rem;
 }
-
 form div {
-    font-family: 'Roboto', sans-serif;
-    color: #fff8bc;
-    font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  color: #fff8bc;
+  font-size: 1.8rem;
+}
+form label {
+  margin-right: 0.5rem;
 }
 
-.form-container {
-    display: flex;
-    margin: 4rem;
-    flex-wrap: wrap;
-    justify-content: center;
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 1rem;
 }
-
 .form-txt {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
 }
-
 .form-1-2 {
-    margin: 3rem;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: right;
+  margin: 2rem;
 }
-
-.imagen-eventos {
-    width: 434.15px;
-    height: 289.43px;
-    flex-wrap: wrap;
-    padding: 1rem;
+.form-items {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
 }
 
 .txt-area {
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.coment-adicc {
-    text-align: left;
+input {
+  width: 200px;
 }
 
-/* imagenes */
-.img-eventos {
-    background-color: black;
-    display: flex;
+textarea {
+  width: 400px;
+}
+
+@media screen and (max-width: 500px) {
+  .eventos {
+    padding: 1rem;
+  }
+  textarea {
+    width: 280px;
+    height: 150px;
+  }
+  .eventos-img {
+    width: 315px;
+    height: 212px;
+  }
+  .form {
+    margin: 2rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-txt {
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 4rem;
-    justify-content: space-around;
+  }
+  .form-1-2 {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form-items {
+    flex-direction: column;
+    justify-content: center;
+  }
+  form p {
+    text-align: center;
+  }
+  form label {
+    text-align: left;
+  }
 }
 
-/*fin pagina eventos*/
-
-/* inicio @media */
-
-/* hasta tableta */
-@media screen and (max-width: 768px) {
-    .mapa-grande {
-        display: none;
-    }
-
-}
-
-/* a partir de tableta */
-
-@media screen and (min-width: 769px) {
-    .mapa-chico {
-        display: none;
-    }
-}
-
-/* correccion el resto tableta */
-
-@media screen and (min-width: 575px) and (max-width: 1000px) {
-
-    .el-resto-tablet {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* correccion el resto cel*/
-
-@media screen and (max-width: 425px) {
-
-    /*el resto */
-    .section-el-resto {
-        padding: 1rem;
-    }
-
-    .card-el-resto {
-        padding: 1rem;
-    }
-
-    /* sucursales index */
-
-    .section-sucursales-container {
-        padding: 1.5rem;
-    }
-
-    .sucursales-index {
-        padding: 1rem;
-    }
-
-    .sucursal-index {
-        margin: 2rem;
-    }
-
-    /* la carta */
-    .la-carta-container {
-        padding: 1rem;
-    }
-
-    .txt-la-carta {
-        margin: 0.5rem;
-    }
-
-}
-
-@media screen and (max-width: 320px) {
-    .imagen-carta {
-        width: 140px;
-        height: 245px;
-    }
-
-}
-
-/* pagina sucursales */
-@media screen and (max-width: 1024px) {
-
-    .suc-recoleta {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .suc-terraza {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .txt-suc-terraza {
-        order: 1;
-    }
-
-    .sucursal-seccion {
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-    }
-
-    .texto-sucursal {
-        padding: 0;
-    }
-
-    .sucursal-imagen {
-        width: 100%;
-        height: 100%;
-        padding: 0.5rem;
-    }
-    .parrafo-sucursal {
-        text-align: center;
-    }
-    .sucursal-titulo {
-        text-align: center;
-    }
-}
+/*# sourceMappingURL=stylenuevo.css.map */

@@ -1,0 +1,24 @@
+// utilities y base
+
+@import "./base/tipografias";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/reset";
+
+
+// components
+
+@import "./components/buttons";
+@import "./components/navbar";
+@import "./components/footer";
+
+// animation
+
+@import "./animation/animaciones";
+@import "./animation/hover";
+
+// views
+
+@import "./views/home";
+@import "./views/sucursales";
+@import "./views/eventos";

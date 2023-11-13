@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,8 +53,8 @@
 
 
     <!-- inicio banner -->
-    <div class="bg-banner">
-        <div id="carouselExampleAutoplaying" class="carousel slide banner" data-bs-ride="carousel">
+    <div class="banner">
+        <div id="carouselExampleAutoplaying" class="carousel slide banner-img" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./img/banner1.jpg" class="d-block w-100" alt="Imagen Banner 1">
@@ -81,18 +83,18 @@
 
     <!-- inicio la carta -->
     <main id="link-la-carta">
-        <section class="la-carta-container">
+        <section class="carta">
             <div class="titulos-index">
                 <strong>
                     La Carta
                 </strong>
             </div>
             <div class="carta-entradas">
-                <img src="./img/carta2.jpg" class="imagen-carta" alt="Plato entrada">
-                <div class="entradas-txt txt-la-carta">
+                <img src="./img/carta2.jpg" data-aos="fade-right" class="img-carta" alt="Plato entrada">
+                <div data-aos="zoom-in" data-aos-duration="3000" class="entradas-txt txt-carta">
                     <p>
                     <h3>
-                        <strong class="titulos-la-carta">
+                        <strong class="titulos-carta">
                             Entradas
                         </strong> <br>
                     </h3>
@@ -122,13 +124,13 @@
                 </div>
             </div>
             <div class="carta-principales">
-                <div class="img-principales">
-                    <img src="./img/carta3.jpg" class="imagen-carta" alt="Plato principal 1">
+                <div class="img-carta-principales">
+                    <img src="./img/carta3.jpg" data-aos="fade-right" class="img-carta" alt="Plato principal 1">
                 </div>
-                <div class="txt-la-carta principal-la-carta">
+                <div data-aos="zoom-in" data-aos-duration="3000" class="txt-carta principal-la-carta">
                     <p>
                     <h3>
-                        <strong class="titulos-la-carta">
+                        <strong class="titulos-carta">
                             Principales
                         </strong> <br>
                     </h3>
@@ -168,16 +170,16 @@
                     </ul>
                     </p>
                 </div>
-                <div class="img-principales">
-                    <img src="./img/carta4.jpg" class="imagen-carta img-principal-2" alt="plato principal 2">
+                <div class="img-carta-principales">
+                    <img src="./img/carta4.jpg" data-aos="fade-left" class="img-carta" alt="plato principal 2">
                 </div>
             </div>
             <div class="carta-postre">
-                <img src="./img/carta5.jpg" class="imagen-carta img-postre" alt="Plato postre">
-                <div class="txt-la-carta">
+                <img src="./img/carta5.jpg" data-aos="fade-left" class="img-carta img-carta-postre" alt="Plato postre">
+                <div data-aos="zoom-in" data-aos-duration="3000" class="txt-carta">
                     <p>
                     <h3>
-                        <strong class="titulos-la-carta">
+                        <strong class="titulos-carta">
                             Postres
                         </strong> <br>
                     </h3>
@@ -209,18 +211,19 @@
 
     <!-- inicio el resto -->
 
-    <section class="section-el-resto" id="link-el-resto">
+    <section class="section-resto" id="link-el-resto">
         <div class="titulos-index titulo-el-resto">
             <strong>
                 Ce La Vi | El Restó
             </strong>
         </div>
         <div class="card-group el-resto-tablet">
-            <div class="card card-el-resto">
+            <div data-aos="zoom-in-up" data-aos-duration="3000" class="card card-resto">
                 <img src="./img/historia1.jpg" class="card-img-top img-el-resto" alt="Imagen Historia">
                 <div class="card-body">
-                    <h5 class="card-title el-resto-titulos">Historia</h5>
-                    <p class="card-text texto-el-resto">Creado por Johnny Fontane a finales de los años 1920, hombre de
+                    <h5 class="card-title card-resto-titulos">Historia</h5>
+                    <p class="card-text card-resto-texto">Creado por Johnny Fontane a finales de los años 1920, hombre
+                        de
                         mar y
                         apasionado por la musica. Cê La Vi
                         se inscribe en la nueva ola culinaria que se extenderá por Argentina: rompiendo con los dogmas
@@ -235,11 +238,11 @@
                     </p>
                 </div>
             </div>
-            <div class="card card-el-resto">
+            <div data-aos="zoom-in-down" data-aos-duration="3000" class="card card-resto">
                 <img src="./img/productos1.jpg" class="card-img-top img-el-resto" alt="Imagen Productos">
                 <div class="card-body">
-                    <h5 class="card-title el-resto-titulos">Productos</h5>
-                    <p class="card-text texto-el-resto"> Desde su creación, calidad y frescura han sido las palabras
+                    <h5 class="card-title card-resto-titulos">Productos</h5>
+                    <p class="card-text card-resto-texto"> Desde su creación, calidad y frescura han sido las palabras
                         clave de este
                         establecimiento de alta gama.
                         Desde 1920 ofreciendo el mejor servicio de gastronomia de la ciudad de Buenos Aires. Esto
@@ -252,11 +255,11 @@
                     </p>
                 </div>
             </div>
-            <div class="card card-el-resto">
+            <div data-aos="zoom-in-up" data-aos-duration="3000" class="card card-resto">
                 <img src="./img/equipo1.jpeg" class="card-img-top img-el-resto" alt="Imagen Equipo">
                 <div class="card-body">
-                    <h5 class="card-title el-resto-titulos">Equipo</h5>
-                    <p class="card-text texto-el-resto"> Los equipos se suceden en Cê La Vi, pero el espíritu Fontane
+                    <h5 class="card-title card-resto-titulos">Equipo</h5>
+                    <p class="card-text card-resto-texto"> Los equipos se suceden en Cê La Vi, pero el espíritu Fontane
                         sigue ahí. Nino
                         Valenti, apoyado por un
                         equipo dinámico en la cocina, consigue que espíritu familiar y modernidad vayan de la mano. El
@@ -273,21 +276,22 @@
 
     <!-- inicio sucursales -->
 
-    <section class="section-sucursales-container">
+    <section class="sucursales-index">
         <div class="titulos-index">
             <strong>
                 Sucursales
             </strong>
         </div>
-        <div class="sucursales-index">
-            <div class="sucursal-index">
+        <div data-aos="fade-up"
+        data-aos-duration="3000" class="sucursales-index-grupo">
+            <div class="sucursales-index-img">
                 <a href="./pages/sucursales.html#link-sucursal1">
-                    <img src="./img/sucursal1.jpg" class="imagen-sucursales" alt="Sucursal Recoleta">
+                    <img src="./img/sucursal1.jpg" class="img-sucursales" alt="Sucursal Recoleta">
                 </a>
             </div>
-            <div class="sucursal-index">
+            <div class="sucursales-index-img">
                 <a href="./pages/sucursales.html#link-sucursal2">
-                    <img src="./img/sucursal2.jpg" class="imagen-sucursales" alt="Sucursal Terraza al Rio">
+                    <img src="./img/sucursal2.jpg" class="img-sucursales" alt="Sucursal Terraza al Rio">
                 </a>
             </div>
         </div>
@@ -295,23 +299,23 @@
 
     <!-- inicio footer -->
 
-    <footer class="footer-container" id="link-contacto">
+    <footer id="link-contacto">
         <div class="contacto">
             <div class="contacto-texto">
-                <div class="titulo-contacto">
+                <div class="contacto-titulo">
                     Contacto
                 </div>
-                <ul>
-                    <li>
+                <ul class="contacto-lista">
+                    <li class="contacto-lista-items">
                         Telefono 4711 1111
                     </li>
-                    <li>
+                    <li class="contacto-lista-items">
                         Celular: +54 1111 1111
                     </li>
-                    <li>
+                    <li class="contacto-lista-items">
                         Mail: celaviresto@resto.com
                     </li>
-                    <li>
+                    <li class="contacto-lista-items">
                         Av. CeLaVi Resto 6565, Buenos Aires, Argentina.
                     </li>
                 </ul>
@@ -326,9 +330,9 @@
                 width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <nav class="flex-logo-footer">
+        <nav class="logo-footer">
             <a href="#header">
-                <img src="./img/logo.jpg" class="logo-footer" alt="Logo de Ce La Vi">
+                <img src="./img/logo.jpg" class="logo-footer-img" alt="Logo de Ce La Vi">
             </a>
         </nav>
 
@@ -342,6 +346,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

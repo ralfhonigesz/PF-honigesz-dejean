@@ -1,0 +1,165 @@
+
+.eventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 3rem;
+    background-color: black;
+
+    &-txt {
+        display: flex;
+        align-items: right;
+        flex-flow: column wrap;
+        max-width: 1620px;
+
+    }
+
+    &-titulo {
+        font-family: $font-titulo;
+        color: $color-bordo;
+        font-size: 4rem;
+    }
+
+    &-parrafo {
+        font-family: $font-texto;
+        color: $color-beige;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    &-reserva {
+        color: $color-bordo-claro;
+        font-size: 2.3rem;
+    }
+
+    &-img {
+        width: 434.15px;
+        height: 289.43px;
+        padding: 1rem;
+    }
+
+    &-img-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding: 3rem;
+        justify-content: center;
+        background-color: black;
+    }
+}
+
+// formulario 
+
+form {
+    @include flex-center;
+    flex-flow: column wrap;
+
+    p {
+        display: flex;
+        justify-content: left;
+        font-family: $font-titulo;
+        color: $color-bordo-claro;
+        font-size: 2.3rem;
+    }
+
+    div {
+        font-family: $font-texto;
+        color: $color-beige;
+        font-size: 1.8rem;
+    }
+
+    label {
+        margin-right: 0.5rem;
+    }
+}
+
+.form {
+    @include flex-center;
+    flex-flow: column wrap;
+    margin: 1rem;
+
+    &-txt {
+        @include flex-center;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+    }
+
+    &-1-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: right;
+        margin: 2rem;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: right;
+        flex-wrap: wrap;
+        margin: 0.5rem 0;
+    }
+}
+
+.txt-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+}
+
+textarea {
+    width: 400px;
+}
+
+// media query
+
+@media screen and (max-width: 500px) {
+    .eventos {
+        padding: 1rem;
+    }
+
+    textarea {
+        width: 280px;
+        height: 150px;
+    }
+
+    .eventos-img {
+        width: 315px;
+        height: 212px;
+    }
+
+    .form {
+        margin: 2rem 0;
+        justify-content: center;
+        align-items: center;
+
+        &-txt {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &-1-2 {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &-items {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    form p {
+        text-align: center;
+    }
+
+    form label {
+        text-align: left;
+    }
+
+}

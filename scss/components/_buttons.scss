@@ -1,0 +1,17 @@
+.boton {
+    margin: 1rem;
+    width: 100px;
+    height: 40px;
+    font-family: $font-texto;
+    color: black;
+    border: 2px solid $color-bordo-claro;
+    border-radius: 10px;
+}
+
+.boton:hover {
+    background-color: $color-bordo-claro;
+}
+
+.boton:active {
+    background-color: $color-bordo;
+}
